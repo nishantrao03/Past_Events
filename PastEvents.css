@@ -1,0 +1,309 @@
+@font-face {
+    src: url(Gotham-Bold.woff);
+    font-family: gotham;
+}
+
+.some{
+    font-size: 88px;
+    line-height: 88.8889px;
+    font-family: gotham,sans-serif;
+    transform: scaleX(-1);
+    position: absolute;
+    top: 86.5px;
+    right: 136.5px;
+    font-weight: 700;
+}
+
+.back{
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ff0039;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: gotham,sans-serif;
+    transform: scaleX(-1);
+    font-weight: 500;
+    position: absolute;
+    top: 34px;
+    right: 68px;
+
+    letter-spacing: 1.7px;
+    
+
+}
+
+.symbol{
+    display: none;
+    letter-spacing: 1.7px;
+
+}
+
+.back:hover+.symbol{
+    display:flex;
+    transform: scale((1,2)) scaleX(-1);
+    color: #ff0039;
+    font-weight: 800;
+    position: absolute;
+    top: 34px;
+    right: 50px;
+    animation-name: symbolleft;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.back:hover{
+    display: block;
+    
+    animation-name: backright;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes backright {
+    from{
+        position: absolute;
+        right: 68px;
+        
+    }
+    to{
+        position: absolute;
+        right: 74px;
+        
+    }
+}
+
+@keyframes symbolleft {
+    from{
+        position: absolute;
+        right: 50px;
+        font-weight: 800;
+        transform: scale(1,2.5) scaleX(-1);
+        color: white;
+        font-family: gotham,sans-serif;
+        letter-spacing: 1.7px;
+    }
+    to{
+        position: absolute;
+        right: 40px;
+        font-weight: 800;
+        transform: scale(1,2.5) scaleX(-1);
+        color: #ff0039;
+        font-family: gotham,sans-serif;
+        letter-spacing: 1.7px;
+    }
+}
+
+img.logo{
+    
+    height: 100px;
+    width: 100px;
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 0px;
+    right: 27px;
+    
+}
+
+.symbol{
+    display: none;
+}
+
+.back:hover + .symbol{
+    display: block;
+    color: #ff0039;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: gotham,sans-serif;
+    transform: scaleX(-1);
+    font-weight: 500;
+    position: absolute;
+    top: 34px;
+    right: 50px;
+    letter-spacing: 1.7px;
+}
+
+img.roar{
+    transform: scaleX(-1);
+    height: 253px;
+    width: 250px;
+    position: absolute;
+    top: 254px;
+    right: 164.5px;
+}
+
+.roar:hover{
+    animation-name: roarup;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes roarup {
+    from{
+        position: absolute;
+        top: 254px;
+        right: 164.5px;
+        height: 253px;
+    }
+    to{
+        position: absolute;
+        top: 249px;
+        right: 159.5px;
+        height: 250px;
+        box-shadow: 7px 12px 5px 2px rgba(0, 0, 0, 0.5), 14px 12px 0px 2px #ff0039;
+    }
+}
+.hide1{
+    display: none;
+}
+
+.roar21:hover +.hide1{
+    display: block;
+    height: 24px;
+    width: 108px;
+    position: absolute;
+    top: 525px;
+    right: 235px;
+    border: 0px;
+    color: white;
+    transform: scaleX(-1);
+    background-color: #ff0039;
+    text-align: end;
+    font-family: gotham;
+    letter-spacing: 10.5px;
+    font-size:23px;
+    font-weight: 600;
+    padding-bottom: 1px;
+}
+
+img.meta{
+    transform: scaleX(-1);
+    height: 253px;
+    width: 250px;
+    position: absolute;
+    top: 254px;
+    right: 446.5px;
+}
+
+.meta:hover{
+    animation-name: metaup;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes metaup {
+    from{
+        position: absolute;
+        top: 254px;
+        right: 446.5px;
+        height: 253px;
+    }
+    to{
+        position: absolute;
+        top: 249px;
+        right: 441.5px;
+        height: 250px;
+        box-shadow: 7px 12px 5px 2px rgba(0, 0, 0, 0.5), 14px 12px 0px 2px #ff0039;
+    }
+}
+
+.hide2{
+    display: none;
+}
+
+.meta19:hover +.hide2{
+    display: block;
+    height: 24px;
+    width: 108px;
+    position: absolute;
+    top: 525px;
+    right: 517px;
+    border: 0px;
+    color: white;
+    transform: scaleX(-1);
+    background-color: #ff0039;
+    text-align: end;
+    font-family: gotham;
+    letter-spacing: 10.5px;
+    font-size:23px;
+    font-weight: 600;
+    padding-bottom: 1px;
+}
+
+img.shed{
+    transform: scaleX(-1);
+    height: 253px;
+    width: 250px;
+    position: absolute;
+    top: 254px;
+    right: 728.5px;
+}
+
+.shed:hover{
+    animation-name: shedup;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shedup {
+    from{
+        position: absolute;
+        top: 254px;
+        right: 728.5px;
+        height: 253px;
+    }
+    to{
+        position: absolute;
+        top: 249px;
+        right: 723.5px;
+        height: 250px;
+        box-shadow: 7px 12px 5px 2px rgba(0, 0, 0, 0.5), 14px 12px 0px 2px #ff0039;
+    }
+}
+
+.hide3{
+    display: none;
+}
+
+.shed16:hover +.hide3{
+    display: block;
+    height: 24px;
+    width: 108px;
+    position: absolute;
+    top: 525px;
+    right: 799px;
+    border: 0px;
+    color: white;
+    transform: scaleX(-1);
+    background-color: #ff0039;
+    text-align: end;
+    font-family: gotham;
+    letter-spacing: 10.5px;
+    font-size:23px;
+    font-weight: 600;
+    padding-bottom: 1px;
+}
+.content{
+    display: flex;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    background-image: url('https://tedxiitpatna.com/img/paintedx.42242a20.png');
+    transform: scaleX(-1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position:10px;
+    background-position: right;
+}
